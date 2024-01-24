@@ -29,22 +29,24 @@ const arObject=[
     poste:"Graphic Designer",
     pic:"barbara-ramos-graphic-designer.jpg"
      } 
-]
-for (let i=0; i<arObject.length;i++ ){
+];
+ console.log(arObject)
+for (let i=0; i<arObject.length; i++ ){
     let element= arObject[i]
-    console.log (element)
+    console.log (element.nome, element.poste, element.pic)
    document.querySelector("main").innerHTML +=
-    <div class="card">
+   
+   `
+   <div class="card">
         <div class="image "> 
-        <img src="${element.pic}" alt=""/>
-
+        <img src='.assest/img/${element.pic}'>
         </div>
         
     
-    <h1>`${element.nome}`</h1>
-    <p>`${element.poste}`</p>
+    <h1>${element.nome}</h1>
+    <span>${element.poste}</span>
 
-</div>
+</div>`
 
 }
 
