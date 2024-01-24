@@ -30,6 +30,7 @@ const arObject=[
     pic:"barbara-ramos-graphic-designer.jpg"
      } 
 ];
+
  console.log(arObject)
 for (let i=0; i<arObject.length; i++ ){
     let element= arObject[i]
